@@ -1,0 +1,21 @@
+.App{
+  width: 30%;
+  margin: auto;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  border-radius: 5px;
+}
+input{
+  padding: 10px;
+  margin-bottom: 1rem;
+
+}
+button{
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
