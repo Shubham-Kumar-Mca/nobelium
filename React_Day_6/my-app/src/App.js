@@ -1,60 +1,66 @@
 import React, { useRef, useState } from 'react'
+import { GiCancel } from "react-icons/gi";
 import "./App.css"
-import { MdCancel } from "react-icons/md";
 
 const App = () => {
   const [text, setText] = useState("")
   const [todos, setTodos] = useState([])
-  const initialValue = useRef(0)
+  const [count, setCount] = useState(0)
 
-
-  const handelChange = (e) => {
+  const handelInputChnage = (e) => {
     setText(e.target.value)
   }
 
   const handelAdding = () => {
     const newUser = {
-      id: new Date() + text,
+      id: new Date(),
       title: text,
       status: false
     }
-    setTodos([...todos, newUser])
+    setTodos([...todos, newUser]);
     setText("")
+    setCount(count + 1)
   }
-  const handelDelete = (id) => {
-    const filterData = todos.filter(todo => todo.id !== id)    
+
+  const handelDeleting = (id) => {
+    todos.forEach(ele => {
+      if ((ele.id === id) && ele.status === false) {
+        setCount(count - 1)
+      }
+    })
+    const filterData = todos.filter((item) => item.id !== id);
     setTodos(filterData)
   }
-  const handelStatus = (id) => {
-    const updateData = todos.map((item) => {
+
+  const handelUpdating = (id) => {
+    const updatedData = todos.map(item => {
       if (item.id === id) {
-        initialValue.current = initialValue.current + 1
+        count > 0 && setCount(count - 1)
         return { ...item, status: !item.status }
       } else {
         return item
       }
     })
-    setTodos(updateData)
+    setTodos(updatedData)
   }
-
-
 
   return (
     <div className='container'>
-      <h1>Pending Task {todos.length - initialValue.current}</h1>
+      <h1>Pending Task {`(${count})`}</h1>
       <div>
-        {todos && todos.map((ele, index) => (
-          <div key={index} className="Single-data">
-            {ele.status ? <p> <strike> {ele.title}</strike></p> : <p>{ele.title}</p>}
+        {todos.map((todo, index) => (
+          <div key={index} className='Single-data'>
+            {todo.status ? <p> <strike>{todo.title}</strike></p> : <p>{todo.title}</p>}
             <div>
-              <button onClick={() => handelStatus(ele.id)}>Completed</button>
-              <MdCancel className='icon' onClick={() => handelDelete(ele.id)} />
+              <button onClick={() => handelUpdating(todo.id)}>{todo.status ? "Completed" : "Not Completed"}</button>
+              <GiCancel className='icon' onClick={() => handelDeleting(todo.id)} />
             </div>
           </div>
         ))}
       </div>
+      
       <div className='input-part'>
-        <input type="text" value={text} onChange={(e) => handelChange(e)} />
+        <input placeholder='Enter Something...' value={text} onChange={handelInputChnage} />
         <button onClick={handelAdding}>Add</button>
       </div>
     </div>
