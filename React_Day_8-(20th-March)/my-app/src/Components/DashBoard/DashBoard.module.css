@@ -1,0 +1,90 @@
+.DashBoardContainer {
+    height: 500px;
+    margin-top: .5rem;
+    background: url("https://png.pngtree.com/background/20210709/original/pngtree-office-items-picture-desk-on-the-desktop-picture-image_666140.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 0 0 4rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.herosection {
+    width: 25%;
+    padding: 1rem;
+}
+
+.herosection>p:first-child {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.herosection>h2 {
+    font-size: 42px;
+}
+
+.herosection>h2+p {
+    font-size: 18px;
+    color: rgb(19, 5, 5);
+    line-height: 30px;
+}
+
+.buttonSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.buttonSection>button {
+    padding: 15px 30px;
+    border: 1px solid orange;
+    background-color: orange;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.playicon {
+    font-size: 50px;
+    color: orange;
+    cursor: pointer;
+}
+
+.buttonSection>p {
+    color: rgb(243, 6, 243);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+    .DashBoardContainer {
+        padding: 0 1rem;
+    }
+
+    .herosection {
+        width: 90%;
+    }
+    .herosection > h2{
+        font-size: 38px;
+    }
+
+    .playicon {
+        margin-left: 20px;
+        font-size: 35px;
+    }
+
+    .buttonSection>button {
+        padding: 10px 15px;
+        border-radius: 05px;
+        font-size: 14px;
+    }
+    .buttonSection{
+        justify-content: space-evenly;
+    }
+    .buttonSection > p{
+        font-size: 16px;
+    }
+}

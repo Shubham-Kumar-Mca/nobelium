@@ -1,0 +1,129 @@
+.NavbarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px 2px rgb(232, 232, 232);
+    height: 70px;
+    padding: 0 4.5rem 0 3.5rem;
+}
+.cancelButton{
+    display: none;
+}
+
+.NavbarLinks {
+    display: flex;
+    align-items: center;
+
+}
+
+.NavbarGitHubImageContainer {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.NavbarGitHubImageContainer>h2 {
+    margin-left: 10px;
+}
+
+.NavbarGitHubImageContainer>img {
+    width: 40px;
+    height: 40px;
+}
+
+.leftContain {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin-left: -2rem;
+}
+
+ul>li {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.changeColor {
+    color: rgb(200, 199, 199);
+    font-size: 20px;
+}
+
+.SingUpAndLoginButtonContainer {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.SingUpAndLoginButtonContainer>button {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.SingUpAndLoginButtonContainer>button:last-child {
+    border: 2px solid orange;
+    border-radius: 25px;
+}
+
+.HemburgurMenu {
+    display: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .NavbarContainer {
+        padding: 0 1rem 0 .5rem;
+    }
+
+    .NavbarLinks {
+        display: none;
+
+    }
+
+    .SingUpAndLoginButtonContainer>button {
+        display: none;
+    }
+
+    .HemburgurMenu {
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .show {
+        display: block;
+    }
+
+    ul {
+        flex-direction: column;
+        margin-left: 0;
+        height: 50vh;
+        position: absolute;
+        right: 0;
+        width: 40%;
+        top: -2.5%;
+        background-color: #e9e3e3;
+        justify-content: center;
+        border-radius: 10px 0 0 10px;
+        
+
+    }
+    li{
+        margin-top: 2rem;
+    }
+    .cancelButton{
+        display: block;
+    }
+    .canceCircle{
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 30px;
+    }
+}
