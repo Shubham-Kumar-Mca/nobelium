@@ -1,0 +1,17 @@
+body{
+  background-color: #282c34;
+}
+.cotainer{
+  width: 80%;
+  margin: auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+h1{
+  text-align: center;
+  color: orange;
+  font-size: 45px;
+  text-decoration: underline;
+}
