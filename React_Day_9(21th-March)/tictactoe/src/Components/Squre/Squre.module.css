@@ -1,0 +1,18 @@
+.borderBottom{
+    border-bottom: 10px solid teal;
+}
+.borderRight{
+    border-right: 10px solid teal;
+}
+.paddingRightLeft{
+    padding: 0 2.5rem;
+}
+h2{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+}
