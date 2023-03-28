@@ -1,0 +1,77 @@
+.App {
+    background-color: #00aeff;
+    width: 450px;
+    min-height: 200px;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5rem auto;
+}
+
+.scrore-section {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.question-section {
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    /* flex: 2; */
+}
+input{
+    border: 1px solid red;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.answer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    align-items: stretch;
+}
+.answer-section > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.answer-section > div > span{
+    font-size: 22px;
+}
+.btn-next-section{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.next-btn {
+    border: 0;
+    padding: 10px 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.btn-tryAgain {
+    border: 0;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.btn-tryAgain:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
