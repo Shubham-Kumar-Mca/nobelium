@@ -1,0 +1,40 @@
+.input-container{
+    width: 25%;
+    margin: auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 18px 3px rgb(212, 211, 211);
+}
+.input-container > input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px;
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.input-container > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-container > div > button{
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
