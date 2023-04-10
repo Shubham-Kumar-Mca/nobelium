@@ -1,0 +1,23 @@
+.App{
+    width: 50%;
+    margin: auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 0 1rem 2rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 18px 3px rgb(210, 209, 209);
+}
+body{
+    background-color: #282c34;
+}
+button{
+    padding: 18px 30px;
+    border-radius: 8px;
+    border: none;
+    background-color: #db3545;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
