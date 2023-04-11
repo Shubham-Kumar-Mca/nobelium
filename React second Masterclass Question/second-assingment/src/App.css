@@ -1,0 +1,46 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin: auto;
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+.tabelConainer{
+  width: 78%;
+  margin: auto;
+  overflow: auto;
+}
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+thead{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+table td, table th{
+  border: 1px solid #d1d5db;
+  padding: 10px;
+  text-align: center;
+  
+}
+table th{
+  background-color: #2b609d;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  
+}
+tr > td:last-child{
+  cursor : pointer;
+}
