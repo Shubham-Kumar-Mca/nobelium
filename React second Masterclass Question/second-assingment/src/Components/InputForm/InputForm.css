@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.User-Details {
+    width: 40%;
+    margin: auto;
+    /* position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; */
+    padding: 20px 30px 30px;
+    box-shadow: 0 0 8px 3px rgb(212, 211, 211);
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form>div {
+    margin-bottom: 0.8rem;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 3px;
+    outline: none;
+}
+
+.btn>input {
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    background-color: #db3545;
+    color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.pTag {
+    color: red;
+}
