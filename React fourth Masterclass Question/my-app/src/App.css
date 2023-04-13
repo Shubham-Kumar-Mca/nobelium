@@ -1,0 +1,55 @@
+.App{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  background-color: orange;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+}
+h2{
+  text-align: center;
+}
+.App>div:first-child, .App>div:last-child{
+  border-radius: 10px 0 0 10px;
+  background-color: #5ac4f6;
+  padding: 0 20px;
+  width: 100%;
+}
+.App>div:last-child{
+  border-radius: 0 10px 10px 0;
+  position: relative;
+}
+.DisplayAllData{
+  height: 500px;
+  overflow: auto;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+.DisplayAllData::-webkit-scrollbar{
+  display: none;
+}
+.DisplayAllData>p{
+  padding: 15px;
+  background-color: #eb539f;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.singleuserData{
+  width: 90%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+}
+
+span{
+  font-weight: bold;
+}
+.singleuserData p{
+  font-size: 20px;
+  text-align: justify;
+}
