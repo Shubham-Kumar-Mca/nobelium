@@ -1,0 +1,36 @@
+/*Start Tabel CSS */
+table{
+  border-collapse: collapse;
+  width: 60%;
+  margin: auto;
+  margin-top: 30px;
+
+}
+table td, table th{
+  border: 1px solid #d1d5db;
+  padding: 10px;
+  text-align: center;
+}
+table th{
+  text-align: center;
+  background-color: #2b609d;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 12px;
+}
+
+/*End Tabel CSS */
+
+
+.btn{
+  width: 90%;
+  margin: 5rem auto;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  gap: 10px;
+}
+
+button{
+  padding: 10px;
+  cursor: pointer;
+}
